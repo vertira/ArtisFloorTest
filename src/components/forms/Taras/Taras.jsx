@@ -20,7 +20,7 @@ export const Taras = () => {
 					colorScheme="green"
 					name="taras"
 				>
-					<img src="src\assets\wycena\taras.webp" className="size-52"></img>
+					<img src="assets\wycena\taras.webp" className="size-52"></img>
 					<span className="font-bold font-barlow text-2xl flex justify-center">
 						Taras drewniany
 					</span>

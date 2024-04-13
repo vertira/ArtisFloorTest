@@ -26,7 +26,7 @@ export const Drewno = ({ title, register, errors }) => {
 			>
 				<Stack direction="row" className="w-full flex justify-around">
 					<div className="flex flex-col-reverse">
-						<img src="\src\assets\wycena\dąb.jpg" className="size-20" />
+						<img src="assets\wycena\dąb.jpg" className="size-20" />
 						<Radio
 							isInvalid={errors[`${title}-drewno`] ? true : false}
 							value="dab"
@@ -38,7 +38,7 @@ export const Drewno = ({ title, register, errors }) => {
 						</Radio>
 					</div>
 					<div className="flex flex-col-reverse">
-						<img src="\src\assets\wycena\jesion.jpg" className="size-20" />
+						<img src="\assets\wycena\jesion.jpg" className="size-20" />
 						<Radio
 							isInvalid={errors[`${title}-drewno`] ? true : false}
 							value="jesion"
@@ -50,7 +50,7 @@ export const Drewno = ({ title, register, errors }) => {
 						</Radio>
 					</div>
 					<div className="flex flex-col-reverse">
-						<img src="\src\assets\wycena\buk.jpg" className="size-20" />
+						<img src="\assets\wycena\buk.jpg" className="size-20" />
 						<Radio
 							isInvalid={errors[`${title}-drewno`] ? true : false}
 							value="buk"
@@ -62,7 +62,7 @@ export const Drewno = ({ title, register, errors }) => {
 						</Radio>
 					</div>
 					<div className="flex flex-col-reverse">
-						<img src="\src\assets\wycena\sosna.jpg" className="size-20" />
+						<img src="\assets\wycena\sosna.jpg" className="size-20" />
 						<Radio
 							isInvalid={errors[`${title}-drewno`] ? true : false}
 							value="sosna"
@@ -78,7 +78,8 @@ export const Drewno = ({ title, register, errors }) => {
 			{value
 				? ""
 				: errors[`${title}-drewno`] && (
-						<p style={{ color: "red" }}>{errors[`${title}-drewno`].message}</p>)}
+						<p style={{ color: "red" }}>{errors[`${title}-drewno`].message}</p>
+				  )}
 		</div>
 	);
 };

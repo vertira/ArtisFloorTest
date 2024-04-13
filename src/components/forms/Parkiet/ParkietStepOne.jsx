@@ -27,7 +27,7 @@ const animation = useRef()
 					colorScheme="green"
 					name="parkiet"
 				>
-					<img src="src\assets\wycena\floor.jpg" className="size-52"></img>
+					<img src="assets\wycena\floor.jpg" className="size-52"></img>
 					<span className="font-bold font-barlow text-2xl flex justify-center">
 						Parkiet drewniany
 					</span>
