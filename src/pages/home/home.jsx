@@ -29,7 +29,7 @@ export const Home = () => {
 				<Link to="/firma">
 					<button className="size-48 md:size-60 bg-white rounded-full font-belle text-lg md:text-3xl mb-12 md:mb-20 xl:mr-56 lg:mb-0 lg:mt-72 motion-safe:animate-bounce-slow hover:animate-[shadow_1.5s_infinite]">
 						<img
-							src="assets\shared\parkiet.svg"
+							src="src\assets\shared\parkiet.svg"
 							alt=""
 							className="size-20 mx-auto"
 						/>
