@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+	p {
+		@apply text-lg leading-8 font-barlow font-normal text-gray-950;
+	}
+}
+@layer components {
+	.header1 {
+		@apply font-barlow text-base  md:text-xl lg:text-2.5xl text-center lg:text-left text-lightblue tracking-wider;
+	}
+	.active {
+		@apply border-b-2 border-green-500 text-white;
+	}
+}
+
+@layer utilities {
+	@keyframes brush {
+		0% {
+			background-position: 16rem 0;
+		}
+		100% {
+			background-position: 100%;
+		}
+	}
+	.brush {
+		background-image: url("//s2.svgbox.net/pen-brushes.svg?ic=brush-1&color=green-600");
+		background-position: 20rem 0;
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		animation: brush 1.3s 0s 1;
+		animation-fill-mode: forwards;
+	}
+	.brush2 {
+		background-image: url("//s2.svgbox.net/pen-brushes.svg?ic=brush-1&color=green-500");
+		background-position: 20rem 0;
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		animation: brush 1.3s 0s 1;
+		animation-fill-mode: forwards;
+	}
+	.brush3 {
+		background-image: url("//s2.svgbox.net/pen-brushes.svg?ic=brush-1&color=green-400");
+		background-position: 20rem 0;
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		animation: brush 1.3s 0s 1;
+		animation-fill-mode: forwards;
+	}
+	.scroll {
+		overscroll-behavior: none;
+		width: 600%;
+		height: 100%;
+		display: flex;
+		flex-wrap: nowrap;
+	}
+	.bmBurgerButton {
+		position: "fixed";
+		width: "48px";
+		height: "48px";
+		right: "36px";
+		top: "36px";
+	}
+}
