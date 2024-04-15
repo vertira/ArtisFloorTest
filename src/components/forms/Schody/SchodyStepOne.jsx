@@ -27,7 +27,7 @@ export const SchodyStepOne = ({ register }) => {
 					colorScheme="green"
 					name="schody"
 				>
-					<img src="assets\wycena\stairs.jpg" className="size-52"></img>
+					<img src="assets\wycena\stairs.webp" className="size-52"></img>
 					<span className="font-bold font-barlow text-2xl flex justify-center">
 						Schody drewniane
 					</span>
