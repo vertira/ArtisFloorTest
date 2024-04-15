@@ -6,19 +6,19 @@ import { useMediaQuery } from "@chakra-ui/react";
 import { stack as Menu } from "react-burger-menu";
 import { styles } from "../data/navData";
 import { useState } from "react";
-import { set } from "react-hook-form";
+
 export const Navigation = () => {
 	const active = useActive();
 	const [isMobile] = useMediaQuery("(max-width: 768px)");
 	const [isOpen, setOpen] = useState(false);
 	return (
 		<div className="w-full flex justify-between place-items-center md:pl-10 lg:mt-8 ">
-			<div className="backdrop-blur-xl bg-grayscale1 rounded-full">
+			<div>
 				<Link to="/">
 					<img
 						src={logo}
 						alt="logo"
-						className="ml-6 mt-6 md:ml-0 md:mt-0 h-12 md:h-16 xl:h-20  "
+						className="ml-6 mt-6 md:ml-0 md:mt-0 h-12 w-auto md:h-16 xl:h-20  "
 					/>
 				</Link>
 			</div>

@@ -43,7 +43,7 @@ export default {
 				"100p": "100%",
 			},
 			backgroundImage: {
-				firma: "url('./assets/firma/background.jpg')",
+				firma: "url('./assets/firma/background.webp')",
 			},
 			fontFamily: {
 				barlow: ['"Barlow Condensed"', "sans-serif"],
