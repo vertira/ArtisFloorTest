@@ -1,10 +1,10 @@
-export const Logos = (activeState, activeList) => {
+export const Logos = (activeState) => {
 	switch (activeState) {
 		case "0":
 			return (
 				<img
-					src={`assets/firma/${activeList.name}.svg`}
-					alt={`photo of planet ${activeList.name}`}
+					src={`assets/firma/firma.svg`}
+					alt={`logo of Artis Floor`}
 					className="size-44 md:size-72 xl:size-[445px] xl:ml-60 animation"
 				/>
 			);

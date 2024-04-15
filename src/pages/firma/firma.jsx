@@ -34,7 +34,7 @@ export const Firma = () => {
 				O FIRMIE
 			</h1>
 			<div className="flex flex-col items-center mt-8 md:mt-12 xl:flex-row xl:items-start">
-				{Logos(active, activeList)}
+				{Logos(active)}
 				<div className="flex flex-col mt-6 md:mt-14 xl:mt-0 xl:pl-40">
 					<ul className="flex justify-around text-slate-50 font-bold tracking-widest text-sm mx-16 md:mx-60 md:text-base md:h-9 xl:text-2xl xl:justify-normal xl:h-10 xl:gap-10 xl:mx-0 xl:mr-40">
 						{firmaData.map((element, index) => {
