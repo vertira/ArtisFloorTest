@@ -15,12 +15,12 @@ export const Home = () => {
 					<h1 className="font-barlow text-base  md:text-xl lg:text-4xl text-center lg:text-left tracking-wider text-zinc-200">
 						Profesjonalne cyklinowanie parkietu
 					</h1>
-					{/* <h2
+					<h2
 						className="text-[80px] text-center lg:text-left md:text-[100px] font-belle text-white underline decoration-green-600"
 						id="text"
 					>
 						ARTIS FLOOR
-					</h2> */}
+					</h2>
 					<p
 						className="w-[327px] lg:w-[500px] text-center lg:text-left lg:text-2xl text-zinc-200"
 						id="customText"

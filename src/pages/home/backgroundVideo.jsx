@@ -5,6 +5,7 @@ export const BackgroundVideo = () => {
 			autoPlay
 			loop
 			muted
+			loading="lazy"
 			className="fixed -z-10 w-screen h-screen object-cover"
 		>
 			<source src={background} type="video/mp4" />
