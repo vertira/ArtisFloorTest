@@ -44,6 +44,7 @@ export default {
 			},
 			backgroundImage: {
 				firma: "url('./assets/firma/background.webp')",
+				deska: "url('./assets/kontakt/deska.webp')",
 			},
 			fontFamily: {
 				barlow: ['"Barlow Condensed"', "sans-serif"],

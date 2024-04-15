@@ -3,7 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import { Home } from "./pages/home/home.jsx";
 import { Wycena } from "./pages/wycena/wycena.jsx";
 import { Firma } from "./pages/firma/firma.jsx";
-import { Technology } from "./pages/technology.jsx";
+import { Contact } from "./pages/Contact.jsx";
 import { useBackground } from "./hook/useBackground.jsx";
 import { BackgroundVideo } from "./pages/home/backgroundVideo.jsx";
 import "./index.css";
@@ -23,7 +23,7 @@ export const App = () => {
 					<Route path="/" element={<Home />} />
 					<Route path="/firma" element={<Firma />} />
 					<Route path="/wycena" element={<Wycena />} />
-					<Route path="/technology" element={<Technology />} />
+					<Route path="/kontakt" element={<Contact />} />
 				</Routes>
 			</div>
 		</div>

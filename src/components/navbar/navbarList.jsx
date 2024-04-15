@@ -10,7 +10,7 @@ export const NavbarList = (props, setOpen) => {
 				}`}
 				id="0"
 			>
-				<Link to="/" onClick={()=>setOpen(false) }>
+				<Link to="/" onClick={() => setOpen(false)}>
 					<span className="font-barlow font-bold mr-3 hidden lg:inline">
 						00
 					</span>
@@ -25,7 +25,7 @@ export const NavbarList = (props, setOpen) => {
 				}`}
 				id="1"
 			>
-				<Link to="/firma" onClick={()=>setOpen(false)}>
+				<Link to="/firma" onClick={() => setOpen(false)}>
 					<span className="font-barlow font-bold mr-3 hidden lg:inline">
 						01
 					</span>
@@ -40,7 +40,7 @@ export const NavbarList = (props, setOpen) => {
 				}`}
 				id="2"
 			>
-				<Link to="/wycena" onClick={()=>setOpen(false)}>
+				<Link to="/wycena" onClick={() => setOpen(false)}>
 					<span className="font-barlow font-bold mr-3 hidden lg:inline">
 						02
 					</span>
@@ -55,7 +55,7 @@ export const NavbarList = (props, setOpen) => {
 				}`}
 				id="3"
 			>
-				<Link to="/technology" onClick={()=>setOpen(false)}>
+				<Link to="/kontakt" onClick={() => setOpen(false)}>
 					<span className="font-barlow font-bold mr-3 hidden lg:inline">
 						03
 					</span>
