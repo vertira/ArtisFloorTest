@@ -5,6 +5,13 @@ export default {
 		"./src/**/*.{js,ts,jsx,tsx}",
 		"./src/pages/**/*.{js,ts,jsx,tsx}",
 	],
+	mode: "jit",
+	purge: [
+		"./index.html",
+		"./src/**/*.{js,ts,jsx,tsx}",
+		"./src/pages/**/*.{js,ts,jsx,tsx}",
+	],
+	darkMode: false,
 	theme: {
 		extend: {
 			animation: {
@@ -44,7 +51,6 @@ export default {
 			},
 			backgroundImage: {
 				firma: "url('./assets/firma/background.webp')",
-				deska: "url('./assets/kontakt/deska.webp')",
 			},
 			fontFamily: {
 				barlow: ['"Barlow Condensed"', "sans-serif"],
