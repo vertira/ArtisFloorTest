@@ -4,7 +4,7 @@ export const useBackground = () => {
 	const [background, setBackground] = useState(null);
 	const location = useLocation();
 	const path = location.pathname;
-	const chnangeBackground = () => {
+	const changeBackground = () => {
 		if (location.pathname === "/") {
 			setBackground(null);
 		} else {
@@ -12,8 +12,7 @@ export const useBackground = () => {
 		}
 	};
 	useEffect(() => {
-		chnangeBackground();
-		// eslint-disable-next-line react-hooks/exhaustive-deps
+		changeBackground();
 	}, [path]);
 	return background;
 };

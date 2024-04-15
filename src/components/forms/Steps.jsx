@@ -1,6 +1,3 @@
-/* eslint-disable react-hooks/exhaustive-deps */
-/* eslint-disable react/prop-types */
-/* eslint-disable react-hooks/rules-of-hooks */
 import { useEffect } from "react";
 import { ParkietStepOne } from "./Parkiet/ParkietStepOne";
 import { SchodyStepOne } from "./Schody/SchodyStepOne";
@@ -14,7 +11,7 @@ export const Steps = ({ step, register, setHeading, formData, errors }) => {
 		case 0:
 			useEffect(() => {
 				setHeading("Wybierz rodzaj renowacji!");
-			}, [step]);
+			}, [setHeading, step]);
 			return (
 				<div className="flex flex-col gap-5 lg:gap-0 lg:flex-row lg:justify-around w-full">
 					<ParkietStepOne register={register} />
@@ -24,7 +21,7 @@ export const Steps = ({ step, register, setHeading, formData, errors }) => {
 		case 1:
 			useEffect(() => {
 				setHeading("Dodatkowe informacje");
-			}, [step]);
+			}, [setHeading, step]);
 			return (
 				<div className="flex flex-col xl:flex-row w-full justify-around mx-0 xl:mx-10 gap-10">
 					{JSON.parse(localStorage.getItem("schody")) && (
@@ -39,7 +36,7 @@ export const Steps = ({ step, register, setHeading, formData, errors }) => {
 		case 2:
 			useEffect(() => {
 				setHeading("Wycena");
-			}, [step]);
+			}, [setHeading, step]);
 			return (
 				<>
 					<WycenaKoncowa formData={formData} />

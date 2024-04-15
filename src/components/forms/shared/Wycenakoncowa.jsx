@@ -4,7 +4,6 @@ import { useRef, useState } from "react";
 import { renamedKeys, renamedValue } from "../../../data/wycenaData";
 import { Divider } from "@chakra-ui/react";
 import { useCalculationPrice } from "../../../hook/useCalculationPrice";
-import { FadeIn } from "../../../hook/fadeIn";
 import { ParkietStepThree } from "../Parkiet/ParkietStepThree";
 import { SchodyStepThree } from "../Schody/SchodyStepThree";
 export const WycenaKoncowa = ({ formData }) => {
@@ -52,14 +51,12 @@ export const WycenaKoncowa = ({ formData }) => {
 			<div className="text-4xl font-belle flex justify-center text-slate-900 ">
 				<p className="text-4xl xl:text-5xl">
 					Cena końcowa:
-					<FadeIn duration={2} scale={0.5} ref={animation}>
-						<span className="font-barlow ml-10 border-b-4 border-green-600">
-							{totalPrice.toLocaleString("pl-PL", {
-								maximumFractionDigits: 0,
-							})}
-							zł
-						</span>
-					</FadeIn>
+					<span className="font-barlow ml-10 border-b-4 border-green-600">
+						{totalPrice.toLocaleString("pl-PL", {
+							maximumFractionDigits: 0,
+						})}
+						zł
+					</span>
 				</p>
 			</div>
 		</div>
