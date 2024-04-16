@@ -1,6 +1,6 @@
 import { LazyLoadImage } from "react-lazy-load-image-component";
-export const Logos = (activeState) => {
-	switch (activeState) {
+export const Logos = ({ active }) => {
+	switch (active) {
 		case "0":
 			return (
 				<LazyLoadImage
