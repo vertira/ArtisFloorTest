@@ -4,6 +4,9 @@ import { Home } from "./pages/home/home.jsx";
 import { useBackground } from "./hook/useBackground.jsx";
 import loadable from "@loadable/component";
 import "./index.css";
+const Firma = loadable(() => import("./pages/firma/firma.jsx"), {
+	resolveComponent: (components) => components.Firma,
+});
 const Navigation = loadable(() => import("./components/Navigation.jsx"), {
 	resolveComponent: (components) => components.Navigation,
 });
@@ -13,14 +16,11 @@ const BackgroundVideo = loadable(
 		resolveComponent: (components) => components.BackgroundVideo,
 	}
 );
-const Firma = loadable(() => import("./pages/firma/firma.jsx"), {
-	resolveComponent: (components) => components.Firma,
+const Wycena = loadable(() => import("./pages/wycena/wycena.jsx"), {
+	resolveComponent: (components) => components.Wycena,
 });
 const Contact = loadable(() => import("./pages/Contact.jsx"), {
 	resolveComponent: (components) => components.Contact,
-});
-const Wycena = loadable(() => import("./pages/wycena/wycena.jsx"), {
-	resolveComponent: (components) => components.Wycena,
 });
 
 export const App = () => {
