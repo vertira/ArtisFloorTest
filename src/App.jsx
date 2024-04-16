@@ -4,7 +4,6 @@ import { Home } from "./pages/home/home.jsx";
 import { useBackground } from "./hook/useBackground.jsx";
 import loadable from "@loadable/component";
 import "./index.css";
-import { useParagAnimation } from "./pages/home/useParagAnimation.jsx";
 const Navigation = loadable(() => import("./components/Navigation.jsx"), {
 	resolveComponent: (components) => components.Navigation,
 });
@@ -25,7 +24,6 @@ const Wycena = loadable(() => import("./pages/wycena/wycena.jsx"), {
 });
 
 export const App = () => {
-	const animation = useParagAnimation();
 	const backgroundClass = useBackground();
 	return (
 		<div

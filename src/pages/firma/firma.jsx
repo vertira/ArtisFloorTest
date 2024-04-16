@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { firmaData } from "../../data/firmaData.jsx";
 import gsap from "gsap";
+import { FirmaDescription } from "./FirmaDescription";
 import { useGSAP } from "@gsap/react";
 import { Helmet } from "react-helmet-async";
 import loadable from "@loadable/component";
@@ -9,9 +10,6 @@ const Logos = loadable(() => import("./logos.jsx"), {
 });
 const FirmaList = loadable(() => import("./FirmaList.jsx"), {
 	resolveComponent: (components) => components.FirmaList,
-});
-const FirmaDescription = loadable(() => import("./FirmaDescription.jsx"), {
-	resolveComponent: (components) => components.FirmaDescription,
 });
 gsap.registerPlugin(useGSAP);
 export const Firma = () => {
