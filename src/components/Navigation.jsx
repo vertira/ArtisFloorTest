@@ -3,14 +3,16 @@ import logo from "../assets/shared/logo.svg";
 import { NavbarList } from "./navbar/navbarList";
 import { useActive } from "../hook/useActiveNavigation";
 import { useMediaQuery } from "@chakra-ui/react";
-import { stack as Menu } from "react-burger-menu";
-import { styles } from "../data/navData";
-import { useState } from "react";
+// import { MobileMenu } from "./navbar/MobileMenu";
+import loadable from "@loadable/component";
+const MobileMenu = loadable(() => import("./navbar/MobileMenu"), {
+	resolveComponent: (components) => components.MobileMenu,
+});
 
 export const Navigation = () => {
 	const active = useActive();
 	const [isMobile] = useMediaQuery("(max-width: 768px)");
-	const [isOpen, setOpen] = useState(false);
+
 	return (
 		<div className="w-full flex justify-between place-items-center md:pl-10 lg:mt-8 ">
 			<div>
@@ -22,13 +24,7 @@ export const Navigation = () => {
 					/>
 				</Link>
 			</div>
-			{isMobile && (
-				<Menu right styles={styles} noOverlay isOpen={isOpen}>
-					<ul className="flex justify-center">
-						<NavbarList active={active} setOpen={setOpen} />
-					</ul>
-				</Menu>
-			)}
+			{isMobile && <MobileMenu />}
 			<div className="h-px border-b border-[#979797] z-10 right-[800px] hidden lg:block absolute w-calc"></div>
 			{!isMobile && (
 				<nav className="hidden md:flex lg:w-207 h-24 bg-grayscale3 backdrop-blur">
