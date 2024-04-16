@@ -3,7 +3,6 @@ import logo from "../assets/shared/logo.svg";
 import { NavbarList } from "./navbar/navbarList";
 import { useActive } from "../hook/useActiveNavigation";
 import { useMediaQuery } from "@chakra-ui/react";
-// import { MobileMenu } from "./navbar/MobileMenu";
 import loadable from "@loadable/component";
 const MobileMenu = loadable(() => import("./navbar/MobileMenu"), {
 	resolveComponent: (components) => components.MobileMenu,
@@ -20,6 +19,8 @@ export const Navigation = () => {
 					<img
 						src={logo}
 						alt="logo"
+						width="auto"
+						height="auto"
 						className="ml-6 mt-6 md:ml-0 md:mt-0 h-12 w-auto md:h-16 xl:h-20 aspect-auto"
 					/>
 				</Link>
