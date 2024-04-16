@@ -1,7 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&display=swap");
-
 @tailwind base;
 @tailwind components;
+@font-face {
+	font-family: "Bellefair";
+	src: url("assets/fonts/Bellefair-Regular.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Barlow Condensed";
+	src: url("assets/fonts/BarlowCondensed-Regular.ttf") format("truetype");
+}
+
 @tailwind utilities;
 @layer base {
 	p {
