@@ -1,10 +1,8 @@
 /* eslint-disable no-unused-vars */
-// import styles from "../styles/home.module.css";
 import { Link } from "react-router-dom";
 import { useParagAnimation } from "./useParagAnimation";
-
 export const Home = () => {
-	// const animation = useParagAnimation();
+	const animation = useParagAnimation();
 	return (
 		<section className="flex grow">
 			<div className="grow flex flex-col items-center justify-between lg:flex-row lg:items-center lg:justify-between ">
