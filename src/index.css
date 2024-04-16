@@ -3,11 +3,13 @@
 @font-face {
 	font-family: "Bellefair";
 	src: url("assets/fonts/Bellefair-Regular.ttf") format("truetype");
+	font-display: swap;
 }
 
 @font-face {
 	font-family: "Barlow Condensed";
 	src: url("assets/fonts/BarlowCondensed-Regular.ttf") format("truetype");
+	font-display: swap;
 }
 
 @tailwind utilities;
