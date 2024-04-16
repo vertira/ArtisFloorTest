@@ -1,10 +1,31 @@
 /* eslint-disable no-unused-vars */
 import { Link } from "react-router-dom";
 import { useParagAnimation } from "./useParagAnimation";
+import { Helmet } from "react-helmet";
 export const Home = () => {
 	const animation = useParagAnimation();
 	return (
 		<section className="flex grow">
+			<Helmet>
+				<title>Artis Floor - cyklinowanie</title>
+				<meta
+					name="description"
+					content="Profesjonalne usługi cyklinowania podłóg i schodów drewnianych."
+				/>
+				<meta
+					name="keywords"
+					content="cyklinowanie podłóg, cyklinowanie schodów, odnawianie parkietu, renowacja podłóg drewnianych, artis floor, cyklinowanie kalisz, schody kalisz, podłoga kalisz"
+				/>
+				<meta property="og:title" content="Artis Floor - cyklinowanie" />
+				<meta
+					property="og:description"
+					content="Profesjonalne usługi cyklinowania podłóg i schodów drewnianych."
+				/>
+				<meta
+					property="og:image"
+					content="https://artis-floor-test.vercel.app/assets/firma/firma.svg"
+				/>
+			</Helmet>
 			<div className="grow flex flex-col items-center justify-between lg:flex-row lg:items-center lg:justify-between ">
 				<div
 					className="flex flex-col items-center lg:items-start  mx-6 mt-12 md:mt-20 lg:ml-32 lg:mx-0 lg:mt-0 lg:mb-0 lg:h-52"
