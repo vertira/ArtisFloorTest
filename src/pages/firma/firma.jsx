@@ -23,16 +23,16 @@ export const Firma = () => {
 		setData(activeList);
 		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [active]);
-	useGSAP(() => {
-		const section = document.querySelector(".animation");
-		const section2 = document.querySelector(".animation2");
-		gsap.fromTo(
-			section,
-			{ scale: 0.7, opacity: 0 },
-			{ scale: 1, opacity: 1, duration: 0.8 }
-		);
-		gsap.fromTo(section2, { opacity: 0 }, { opacity: 1, duration: 0.8 });
-	}, [active]);
+	// useGSAP(() => {
+	// 	const section = document.querySelector(".animation");
+	// 	const section2 = document.querySelector(".animation2");
+	// 	gsap.fromTo(
+	// 		section,
+	// 		{ scale: 0.7, opacity: 0 },
+	// 		{ scale: 1, opacity: 1, duration: 0.8 }
+	// 	);
+	// 	gsap.fromTo(section2, { opacity: 0 }, { opacity: 1, duration: 0.8 });
+	// }, [active]);
 	const handleClick = (e) => {
 		setActive(e.target.id);
 	};
