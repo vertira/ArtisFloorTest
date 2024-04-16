@@ -20,7 +20,7 @@ export const Navigation = () => {
 					<img
 						src={logo}
 						alt="logo"
-						className="ml-6 mt-6 md:ml-0 md:mt-0 h-12 w-auto md:h-16 xl:h-20  "
+						className="ml-6 mt-6 md:ml-0 md:mt-0 h-12 w-auto md:h-16 xl:h-20 aspect-auto"
 					/>
 				</Link>
 			</div>
