@@ -5,6 +5,7 @@ import { FirmaDescription } from "./FirmaDescription";
 import { useGSAP } from "@gsap/react";
 import { Helmet } from "react-helmet-async";
 import loadable from "@loadable/component";
+import { useCallback } from "react";
 const Logos = loadable(() => import("./logos.jsx"), {
 	resolveComponent: (components) => components.Logos,
 });
@@ -20,7 +21,7 @@ export const Firma = () => {
 	useEffect(() => {
 		setData(activeList);
 		// eslint-disable-next-line react-hooks/exhaustive-deps
-	}, [activeList,]);
+	}, [activeList]);
 	// useGSAP(() => {
 	// 	const section = document.querySelector(".animation");
 	// 	const section2 = document.querySelector(".animation2");
@@ -31,9 +32,10 @@ export const Firma = () => {
 	// 	);
 	// 	gsap.fromTo(section2, { opacity: 0 }, { opacity: 1, duration: 0.8 });
 	// }, [active]);
-	const handleClick = (e) => {
+
+	const handleClick = useCallback((e) => {
 		setActive(e.target.id);
-	};
+	}, []);
 	return (
 		<section className="grow">
 			<Helmet>
