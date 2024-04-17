@@ -20,7 +20,7 @@ export const Firma = () => {
 	useEffect(() => {
 		setData(activeList);
 		// eslint-disable-next-line react-hooks/exhaustive-deps
-	}, [active]);
+	}, [activeList,]);
 	// useGSAP(() => {
 	// 	const section = document.querySelector(".animation");
 	// 	const section2 = document.querySelector(".animation2");
@@ -60,7 +60,7 @@ export const Firma = () => {
 				O FIRMIE
 			</h1>
 			<div className="flex flex-col items-center mt-8 md:mt-12 xl:flex-row xl:items-start">
-				{/* <Logos active={active} /> */}
+				<Logos active={active} />
 				<div className="flex flex-col mt-6 md:mt-14 xl:mt-0 xl:pl-40">
 					<FirmaList
 						firmaData={firmaData}
