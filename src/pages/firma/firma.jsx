@@ -60,14 +60,14 @@ export const Firma = () => {
 				O FIRMIE
 			</h1>
 			<div className="flex flex-col items-center mt-8 md:mt-12 xl:flex-row xl:items-start">
-				<Logos active={active} />
+				{/* <Logos active={active} /> */}
 				<div className="flex flex-col mt-6 md:mt-14 xl:mt-0 xl:pl-40">
 					<FirmaList
 						firmaData={firmaData}
 						handleClick={handleClick}
 						active={active}
 					/>
-					{/* <FirmaDescription data={data} /> */}
+					<FirmaDescription data={data} />
 				</div>
 			</div>
 		</section>
