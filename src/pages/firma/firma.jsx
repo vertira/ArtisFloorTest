@@ -5,7 +5,6 @@ import { FirmaDescription } from "./FirmaDescription";
 import { useGSAP } from "@gsap/react";
 import { Helmet } from "react-helmet-async";
 import loadable from "@loadable/component";
-import React from "react";
 const Logos = loadable(() => import("./logos.jsx"), {
 	resolveComponent: (components) => components.Logos,
 });
@@ -35,9 +34,6 @@ export const Firma = () => {
 	const handleClick = (e) => {
 		setActive(e.target.id);
 	};
-	const LogosMemoized = React.memo(Logos);
-	const FirmaListMemoized = React.memo(FirmaList);
-	const FirmaDescriptionMemoized = React.memo(FirmaDescription);
 	return (
 		<section className="grow">
 			<Helmet>
@@ -64,14 +60,14 @@ export const Firma = () => {
 				O FIRMIE
 			</h1>
 			<div className="flex flex-col items-center mt-8 md:mt-12 xl:flex-row xl:items-start">
-				<LogosMemoized active={active} />
+				<Logos active={active} />
 				<div className="flex flex-col mt-6 md:mt-14 xl:mt-0 xl:pl-40">
-					<FirmaListMemoized
+					<FirmaList
 						firmaData={firmaData}
 						handleClick={handleClick}
 						active={active}
 					/>
-					<FirmaDescriptionMemoized data={data} />
+					{/* <FirmaDescription data={data} /> */}
 				</div>
 			</div>
 		</section>
